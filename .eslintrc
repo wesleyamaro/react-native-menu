@@ -1,0 +1,58 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"react-native/react-native": true,
+		"jest/globals": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:jest/recommended"
+	],
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react",
+		"react-native",
+		"jest"
+	],
+	"rules": {
+		"no-debugger": "off",
+		"no-console": "off",
+		"indent": [
+			"error",
+			"tab"
+		],
+		"linebreak-style": 0,
+		"quotes": [
+			"error",
+			"single"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"key-spacing": [
+			"error", {
+				"afterColon": true
+			}
+		],
+		"camelcase": "error",
+		"react-native/no-unused-styles": 2,
+		"react-native/split-platform-components": 2,
+		"react-native/no-inline-styles": 2,
+		"react-native/no-color-literals": 2,
+		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error"
+	}
+}
